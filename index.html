@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>N&N Store</title>
@@ -16,22 +17,41 @@
         </picture>
         <nav class="navigation animate__animated animate__fadeInRight">
             <ul class="menu">
-                    <li class="menu__item">
-                        <a class="menu__link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="productos.html">Productos</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="ofertas.html">Ofertas</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
+                <li class="menu__item">
+                    <a class="menu__link" href="index.html">Inicio</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="productos.html">Productos</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="ofertas.html">Ofertas</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
         </nav>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Buy Now</button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Menú</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Consolas</p>
+    <p>Computadoras</p>
+    <p>Auriculares</p>
+    <p>VideoJuegos</p>
+    <p>Mandos</p>
+    <p>Accesorios</p>
+  </div>
+</div>
     </header>
-    <main class="container">
+    <main class="container-xl">
+        <div>
+            <h1 class="title">Lo más Vendido!</h1>
+        </div>
         <section class="gallery">
             <picture class="gallery__img">
                 <img src="./img/ps5.jpg" alt="">
@@ -52,7 +72,35 @@
                 <img src="./img/pcgamer1.jpg" alt="">
             </picture>
         </section>
-    </main> 
+    </main>
+    <main class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/auricularescarousel.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/mandoxbox.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/nintendoswitchcarousel.jpg" class="d-block w-100" alt="...">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
     <footer>
         <ul class="menu">
             <li class="menu__item">
@@ -60,5 +108,6 @@
             </li>
         </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
