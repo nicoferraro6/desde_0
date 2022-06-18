@@ -280,8 +280,32 @@ textarea{
     margin: 0 auto;
     padding: 30px;
     /*min-height: calc(100vh - 90px - 90px);*/
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2)
+    
+    
 }
 
+.card-title{
+    font-size: 20px;
+}
+
+
+.precio{
+    color: red;
+    text-align: start;
+    font-size: 25px;
+}
+
+.card{
+    transition: all 0.25s;
+    
+
+}
+
+.card:hover{
+    transform: translateY(-15px);
+
+}
 
 
 /* gallery*/
