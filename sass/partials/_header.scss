@@ -1,0 +1,56 @@
+/*HEADER*/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 0;
+    border-bottom: 2px solid black;
+
+    ul{
+        list-style-type: none;
+    }
+    
+    a{
+        text-decoration: none;
+        color: black;
+        font-family: 'Poppins', sans-serif;
+        position: relative;
+        letter-spacing: 0.5px;
+        padding: 0 10px;
+    }
+    
+    a::after{
+        content: "";
+        position: absolute;
+        background-color: crimson;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+    
+    }
+    
+    a:hover::after{
+        width: 100%;
+    
+    }
+    
+    nav ul li{
+        height: 25px;
+    
+    }
+    
+    ul li a{
+        padding: 5px;
+    
+    
+    }
+    nav ul li a:hover{
+        background-color: rgb(229, 229, 229);
+        padding: 1.5 rem 1.5 rem;
+        border-color: 2px solid black;
+        border-radius: 3px;
+     }
+}
