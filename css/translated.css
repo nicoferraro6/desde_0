@@ -22,7 +22,7 @@ header {
   align-items: center;
   justify-content: space-around;
   padding: 2rem 0;
-  border-bottom: 2px solid black; }
+  border-bottom: #ea1414; }
   header ul {
     list-style-type: none; }
   header a {

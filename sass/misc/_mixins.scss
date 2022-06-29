@@ -1,0 +1,7 @@
+@mixin header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 0;
+    border-bottom: 2px solid black;
+}

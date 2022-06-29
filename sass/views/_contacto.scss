@@ -49,3 +49,39 @@ textarea{
 .gradiente{
     background-image: linear-gradient(grey, white);
 }
+
+
+/*Contacto*/
+
+.texto{
+  font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  form{
+      width: 100%;
+  }
+  
+}
+
+.buscar{
+  position: absolute;
+  padding: 5px;
+  justify-content: center;
+}
+
+.buscar input{
+  width: 240px;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 18px;
+  color: black;
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 30px;
+}
+
+.submenu{
+  text-align: center;
+  font-size: 1.6em;
+}

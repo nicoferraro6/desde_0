@@ -1,19 +1,17 @@
 /*HEADER*/
 
 header{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 2rem 0;
-    border-bottom: 2px solid black;
+    @include header;
+
 
     ul{
         list-style-type: none;
+        text-decoration: none;
     }
-    
+
     a{
         text-decoration: none;
-        color: black;
+        color: map-get($color, "secondary");
         font-family: 'Poppins', sans-serif;
         position: relative;
         letter-spacing: 0.5px;
@@ -54,3 +52,28 @@ header{
         border-radius: 3px;
      }
 }
+
+    header .header__logo{
+    /* flex-basis: 40%; */
+   }
+   
+   header .header__img{
+     max-width: 120px;
+   }
+   
+   header .navigation{
+     /* flex-basis: 60%; */
+   }
+   
+   header nav .menu{
+     display: flex;
+     gap: 2rem;
+     text-align: center;
+   }
+   
+   .menu .menu__link{
+    font-size: 2.2em;
+    color: map-get($color, "secondary" );
+    text-decoration: none;
+  }
+  
