@@ -24,12 +24,22 @@ header {
   justify-content: space-around;
   padding: 2rem 0;
   border-bottom: 2px solid black; }
+  header .header__img {
+    max-width: 120px; }
+  header nav.menu {
+    display: flex;
+    gap: 2rem;
+    text-align: center; }
+  header .menu .menu__link {
+    font-size: 2.2em;
+    color: black;
+    text-decoration: none; }
   header ul {
     list-style-type: none;
     text-decoration: none; }
   header a {
     text-decoration: none;
-    color: red;
+    color: black;
     font-family: 'Poppins', sans-serif;
     position: relative;
     letter-spacing: 0.5px;
@@ -71,9 +81,95 @@ header nav .menu {
 
 .menu .menu__link {
   font-size: 2.2em;
-  color: red;
+  color: black;
   text-decoration: none; }
 
+/*PRACTICANDO MENU DESPLEGABLE*/
+/*header{
+    height: 100px;
+    background: ghostwhite;
+    padding: 0 50px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo{
+        text-transform: uppercase;
+        color: rgb(10, 10, 10);
+        font: 200;
+    }
+
+    .menu a{
+        color: black;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0 10px;
+    }
+
+    .mostrar-menu,
+
+    .esconder-menu{
+        font-size: 30px;
+        cursor: pointer;
+        transition: 0.4s;
+
+    }
+
+    .mostrar-menu{
+        order: 1;
+    }
+
+    .menu a:hover,
+    .mostrar-menu:hover,
+    .esconder-menu:hover{
+        color: crimson;
+    }
+
+    #check{
+        display: none;
+    }
+
+
+
+  }
+
+  @media (max-width: 768px) {
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: azure;
+        left: 0;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+
+    }
+
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked ~ .menu{
+        right: 0;
+    }
+    
+  }*/
 footer {
   padding: 20px;
   border-top: 2px solid black;
@@ -87,7 +183,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 100px 0; }
+  margin: 20px 0; }
 
 .col-1 {
   flex-basis: 30%;
@@ -98,7 +194,7 @@ footer {
   font-size: 54px; }
 
 .col-1 h3 {
-  font-size: 30px;
+  font-size: 28px;
   color: #707070;
   font-weight: 100;
   margin: 20px 0 10px; }
@@ -110,7 +206,8 @@ footer {
 
 .col-1 h4 {
   margin: 30px 0;
-  font-size: 20px; }
+  font-size: 20px;
+  color: black; }
 
 button {
   width: 140px;
@@ -168,7 +265,7 @@ button:hover {
 /* main*/
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 30px;
   /*min-height: calc(100vh - 90px - 90px);*/
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
@@ -176,10 +273,11 @@ button:hover {
 .card-title {
   font-size: 20px; }
 
-.precio, .col-1 h4 {
+.precio {
   color: red;
   text-align: start;
-  font-size: 25px; }
+  font-size: 25px;
+  text-decoration: line-through; }
 
 .card {
   transition: all 0.25s; }
@@ -260,7 +358,8 @@ p {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: repeat(3, auto);
-  gap: 2rem; }
+  gap: 2rem;
+  background-color: #cbcbcb; }
 
 .gallery__img {
   width: 100%;
@@ -276,6 +375,10 @@ p {
 .grid__item {
   font-size: 30px;
   padding: 20px 0; }
+
+@media screen and (max-width: 520px) {
+  .btn-primary {
+    display: none; } }
 
 .ofertas {
   text-align: center;
